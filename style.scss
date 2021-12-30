@@ -1,0 +1,90 @@
+.container {
+  width: 80%;
+  margin: auto;
+}
+.stat {
+  display: flex;
+  justify-content: center;
+  &-you, &-monster {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 1rem;
+  }
+  &-nameText {
+    font-size: 2rem;
+    color: black;
+    text-align: center;
+    text-shadow: white 2px 2px;
+    font-weight: bolder;
+  }
+  &-lifeText {
+    font-weight: bolder;
+    color: white;
+    text-shadow: black 1px 1px;
+    text-align: center;
+    position: relative;
+    top: -2rem;
+  }
+  &-life {
+    height: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: cornflowerblue;
+    border-radius: 20%;
+
+    &::-webkit-progress-bar {
+      background-color: red;
+      border-radius: 7px;
+      box-shadow: 2px 2px 5px 5px black
+    }
+    &::-webkit-progress-value {
+      background-color: blue;
+      border-radius: 7px;
+      box-shadow: 2px 2px 5px 5px black
+    }
+  }
+}
+.bigin {
+  background-color: rgb(34, 126, 34);
+  border-radius: 10px;
+  padding: 0.5rem;
+  margin: 2rem 0;
+  width: 8rem;
+  position: relative;
+  left: calc((100% - 8rem ) / 2);
+
+
+
+  &--off {
+    display: none;
+  }
+}
+.form {
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+
+  &-attack {
+    background-color: red;
+  }
+  &-specialAttack {
+    background-color: yellow;
+  }
+  &-heal{
+    background-color: rgb(34, 126, 34);
+  }
+  &-giveUp {
+    background-color: grey;
+  }
+  &-attack, &-specialAttack, &-heal, &-giveUp {
+    border-radius: 10px;
+    font-size: 1rem;
+    text-align: center;
+    margin: 0 1rem;
+    padding: 0.5rem;
+  }
+  &--off {
+    display: none;
+  }
+}

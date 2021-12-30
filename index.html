@@ -1,0 +1,33 @@
+<head>
+    <!DOCTYPE html>
+    <html lang="fr">
+    <head>
+      <meta charset="utf-8">
+      <meta name="keywords" content="HTML, CSS">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+    <div class='container'>
+      <div class="stat">
+        <div class="stat-you">
+          <span class="stat-nameText">you</span>
+          <progress name='yourLife'  max="100" value='100' class="stat-life"></progress>
+          <span class="stat-lifeText">100%</span>
+        </div>
+          <div class="stat-monster">
+            <span class="stat-nameText">monster</span>
+            <progress name='monsterLife' max="100"  value='100' class="stat-life"></progress>
+            <span class="stat-lifeText">100%</span>
+          </div>
+      </div>
+      <button class="bigin" name='bigin'>new game</button>
+      <form class="form form--off">
+        <button class="form-attack" name='attack'>attack</button>
+        <button class="form-specialAttack" name='specialAttack'>special attack</button>
+        <button class="form-heal" name='heal'>heal</button>
+        <button class="form-giveUp" name='giveUp'>give up</button>
+      </form>
+    </div>
+    <script type="module" src="./index.js"></script>
+  </body>
